@@ -1,12 +1,10 @@
-#include <iostream>
 #include <ostream>
 #include "list.h"
 
-using namespace std;
 
 template <typename T>
 
-class ListArray:public List<T>{
+class ListArray : public List<T>{
 	private:
 		T* arr;
 		int max;
