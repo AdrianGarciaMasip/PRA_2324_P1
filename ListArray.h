@@ -5,12 +5,12 @@ using namespace std;
 
 template <typename T>
 
-class ListArray : public List<T>{
+class ListArray:public List<T>{
 	private:
 		T* arr;
 		int max;
 		int n;
-		static const int MINSIZE;
+		static const int MINSIZE =  2;
 
 		void resize(int new_size){
 			T* new_arr = new T[new_size];
@@ -21,7 +21,7 @@ class ListArray : public List<T>{
 			max = new_size;
 		}
 
-	public:
+		public:
 		ListArray(){
 			arr = new T[MINSIZE];
 			max = MINSIZE;
