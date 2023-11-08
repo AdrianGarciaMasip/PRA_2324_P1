@@ -15,3 +15,6 @@ bin/testListLinnked: testListLinked.cpp ListLinked.h List.h
 
 clean:
 	rm -r *.o *gch bin
+
+Point2D.o: Point2D.h Point2D.cpp
+	g++ -c Point2D.cpp
