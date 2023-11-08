@@ -2,6 +2,8 @@
 #include "List.h"
 #include "Node.h"
 
+using namespace std;
+
 template <typename T>
 class ListLinked : public List<T> {
 
@@ -10,13 +12,11 @@ class ListLinked : public List<T> {
     	    int n;	    
         	
     public:
-	    ListLinked(){
-	    
-	    }
+	    ListLinked();
 
 	    ~ListLinked(){
 	    	while(first != nullptr){
-			Node<T> aux = first->next;
+			Node<T>* aux = first->next;
 			delete first;
 			first = aux;
 		}
