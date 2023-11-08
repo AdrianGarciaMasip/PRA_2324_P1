@@ -1,6 +1,7 @@
 #include <ostream>
 #include "List.h"
 
+using namespace std;
 
 template <typename T>
 
