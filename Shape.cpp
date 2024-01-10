@@ -1,4 +1,4 @@
-#include "Shape.h"
+#include "Shape1.h"
 #include <iostream>
 
 using namespace std;
@@ -25,4 +25,8 @@ void Shape::set_color(string c){
 	}else{
 		throw invalid_argument("Los colores deben ser 'red', 'green' o 'blue");
 	}
+}
+
+double Shape::min:side(){
+	
 }

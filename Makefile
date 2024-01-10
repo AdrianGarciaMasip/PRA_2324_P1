@@ -63,7 +63,9 @@ testDrawing: testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o Poi
 	mkdir -p bin
 	g++ -o bin/testDrawing testDrawing.o Draqing.o Square.o Rectangle.o Circle.o Shape.o Point2D.o
 
-
+clean:
+	rm -rf *.o *.gch bin
+	
 
 
 

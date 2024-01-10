@@ -18,6 +18,7 @@ class Shape{
 		virtual double perimeter() const;
 		virtual void translate(double incX, double incY);
 		virtual void print();
+		double min_side() const;
 };
 
 #endif
